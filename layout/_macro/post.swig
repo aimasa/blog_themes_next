@@ -268,11 +268,7 @@
     {#################}
     {### POST BODY ###}
     {#################}
-    <div class="post-body <div>
-  {% if not is_index %}
-    {% include 'passage-end-tag.swig' %}
-  {% endif %}
-  </div>{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
+    <div class="post-body {% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
 
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
@@ -360,7 +356,11 @@
         {% include 'post-copyright.swig' with { post: post } %}
       </div>
     {% endif %}
-
+    <div>
+  {% if not is_index %}
+    {% include 'passage-end-tag.swig' %}
+  {% endif %}
+</div>
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
