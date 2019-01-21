@@ -1,18 +1,18 @@
-{% if page.copyright %}
+ï»¿{% if page.copyright %}
 <div class="my_post_copyright">
   <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
   
-  <!-- JS¿â sweetalert ¿ÉĞŞ¸ÄÂ·¾¶ -->
+  <!-- JSåº“ sweetalert å¯ä¿®æ”¹è·¯å¾„ -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>±¾ÎÄ±êÌâ:</span><a href="{{ url_for(page.path) }}">{{ page.title }}</a></p>
-  <p><span>ÎÄÕÂ×÷Õß:</span><a href="/" title="·ÃÎÊ {{ theme.author }} µÄ¸öÈË²©¿Í">{{ theme.author }}</a></p>
-  <p><span>·¢²¼Ê±¼ä:</span>{{ page.date.format("YYYYÄêMMÔÂDDÈÕ - HH:MM") }}</p>
-  <p><span>×îºó¸üĞÂ:</span>{{ page.updated.format("YYYYÄêMMÔÂDDÈÕ - HH:MM") }}</p>
-  <p><span>Ô­Ê¼Á´½Ó:</span><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a>
-    <span class="copy-path"  title="µã»÷¸´ÖÆÎÄÕÂÁ´½Ó"><i class="fa fa-clipboard" data-clipboard-text="{{ page.permalink }}"  aria-label="¸´ÖÆ³É¹¦£¡"></i></span>
+  <p><span>æœ¬æ–‡æ ‡é¢˜:</span><a href="{{ url_for(page.path) }}">{{ page.title }}</a></p>
+  <p><span>æ–‡ç« ä½œè€…:</span><a href="/" title="è®¿é—® {{ theme.author }} çš„ä¸ªäººåšå®¢">{{ theme.author }}</a></p>
+  <p><span>å‘å¸ƒæ—¶é—´:</span>{{ page.date.format("YYYYå¹´MMæœˆDDæ—¥ - HH:MM") }}</p>
+  <p><span>æœ€åæ›´æ–°:</span>{{ page.updated.format("YYYYå¹´MMæœˆDDæ—¥ - HH:MM") }}</p>
+  <p><span>åŸå§‹é“¾æ¥:</span><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a>
+    <span class="copy-path"  title="ç‚¹å‡»å¤åˆ¶æ–‡ç« é“¾æ¥"><i class="fa fa-clipboard" data-clipboard-text="{{ page.permalink }}"  aria-label="å¤åˆ¶æˆåŠŸï¼"></i></span>
   </p>
-  <p><span>Ğí¿ÉĞ­Òé:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">ÊğÃû-·ÇÉÌÒµĞÔÊ¹ÓÃ-½ûÖ¹ÑİÒï 4.0 ¹ú¼Ê</a> ×ªÔØÇë±£ÁôÔ­ÎÄÁ´½Ó¼°×÷Õß¡£</p>  
+  <p><span>è®¸å¯åè®®:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">ç½²å-éå•†ä¸šæ€§ä½¿ç”¨-ç¦æ­¢æ¼”ç» 4.0 å›½é™…</a> è½¬è½½è¯·ä¿ç•™åŸæ–‡é“¾æ¥åŠä½œè€…ã€‚</p>  
 </div>
 <script> 
     var clipboard = new Clipboard('.fa-clipboard');
@@ -20,7 +20,7 @@
       clipboard.on('success', function(){
         swal({   
           title: "",   
-          text: '¸´ÖÆ³É¹¦',
+          text: 'å¤åˆ¶æˆåŠŸ',
           icon: "success", 
           showConfirmButton: true
           });
