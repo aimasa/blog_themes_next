@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 {% set html_class = 'theme-next ' + theme.scheme %}
 {% if theme.motion.enable %}
   {% set html_class = html_class + ' use-motion' %}
