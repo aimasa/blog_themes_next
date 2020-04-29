@@ -1,4 +1,5 @@
-<div class="copyright">{#
+<div class="copyright">
+<center>{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
@@ -19,7 +20,9 @@
     #}{{ totalcount(site, '0,0.0a') }}{#
   #}</span>
   {% endif %}
+ </center>
 </div>
+<div><center>赣ICP备19005959号-1</center></div>
 
 {% if theme.footer.powered %}
   <div class="powered-by">{#
